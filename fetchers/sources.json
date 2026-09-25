@@ -1,0 +1,14 @@
+{
+  "_note": "Endpoints to confirm before use. Set verified=true once you've tested each one and read its terms of use.",
+  "sources": [
+    {"id": "chs_iwls", "name": "DFO CHS tides and water levels (IWLS)", "base_url": "https://api-iwls.dfo-mpo.gc.ca/api/v1", "refresh_minutes": 15, "enabled": true, "verified": false},
+    {"id": "meds_waves", "name": "DFO MEDS wave buoys", "base_url": "https://www.meds-sdmm.dfo-mpo.gc.ca", "refresh_minutes": 60, "enabled": false, "verified": false},
+    {"id": "msc_marine", "name": "ECCC MSC Datamart marine observations", "base_url": "https://dd.weather.gc.ca", "refresh_minutes": 60, "enabled": false, "verified": false},
+    {"id": "cioos_pacific", "name": "CIOOS Pacific ERDDAP", "base_url": "https://data.cioospacific.ca/erddap", "refresh_minutes": 360, "enabled": false, "verified": false},
+    {"id": "cioos_atlantic", "name": "CIOOS Atlantic ERDDAP", "base_url": "https://cioosatlantic.ca/erddap", "refresh_minutes": 360, "enabled": false, "verified": false},
+    {"id": "cioos_slgo", "name": "CIOOS St. Lawrence (OGSL) ERDDAP", "base_url": "https://erddap.ogsl.ca/erddap", "refresh_minutes": 360, "enabled": false, "verified": false},
+    {"id": "hakai", "name": "Hakai Institute ERDDAP", "base_url": "https://catalogue.hakai.org/erddap", "refresh_minutes": 360, "enabled": false, "verified": false},
+    {"id": "onc", "name": "Ocean Networks Canada Oceans 3.0", "base_url": "https://data.oceannetworks.ca/api", "refresh_minutes": 60, "enabled": false, "verified": false, "needs_token": "ONC_TOKEN"},
+    {"id": "argo", "name": "Argo floats in Canadian waters", "base_url": "https://erddap.ifremer.fr/erddap", "refresh_minutes": 1440, "enabled": false, "verified": false}
+  ]
+}

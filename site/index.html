@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Canada Ocean Dashboard</title>
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Canada Ocean Dashboard</h1>
+    <p class="lede">Live and recent ocean data from Canadian public sources.</p>
+    <p class="status" id="status">Loading data…</p>
+  </header>
+
+  <main class="grid">
+    <!-- Each panel is filled from site/data/<id>.json by js/app.js. Build the markup and CSS with sample data first. -->
+    <section class="panel" id="chs_iwls" aria-labelledby="h-tides">
+      <h2 id="h-tides">Tides and water levels</h2>
+      <div class="panel-body"><p class="empty">No data yet.</p></div>
+    </section>
+    <section class="panel" id="meds_waves" aria-labelledby="h-waves">
+      <h2 id="h-waves">Wave buoys</h2>
+      <div class="panel-body"><p class="empty">No data yet.</p></div>
+    </section>
+    <section class="panel" id="cioos_pacific" aria-labelledby="h-sst">
+      <h2 id="h-sst">Sea surface temperature</h2>
+      <div class="panel-body"><p class="empty">No data yet.</p></div>
+    </section>
+    <section class="panel panel--wide" id="onc" aria-labelledby="h-onc">
+      <h2 id="h-onc">Coastal observatories</h2>
+      <div class="panel-body"><p class="empty">No data yet.</p></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Data: Fisheries and Oceans Canada, Environment and Climate Change Canada, CIOOS, Ocean Networks Canada, Hakai Institute, Argo. See README for sources and terms.</p>
+  </footer>
+  <script src="js/app.js" defer></script>
+</body>
+</html>
