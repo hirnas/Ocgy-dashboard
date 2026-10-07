@@ -1,6 +1,23 @@
-__pycache__/
+# .gitignore – ignore large data files
+# The GEBCO data and generated tiles are not committed to keep the repo lightweight.
+# Feel free to adjust if you ever want to commit sample data.
+
+# Ignore all files under any data directory
+**/data/
+
+# Common OS and editor junk
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+
+# Python bytecode
 *.pyc
-.venv/
-site/data/*.json
-!site/data/sample_*.json
-.env
+__pycache__/
+
+# Node package lock files
+package-lock.json
+
+# Logs
+*.log
+
