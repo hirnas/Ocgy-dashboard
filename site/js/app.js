@@ -1,6 +1,22 @@
 // Loads site/data/manifest.json, then each panel's JSON, and renders simple stat rows.
 // Keep this small: layout and styling live in HTML/CSS.
 async function load() {
+  // Map init if map container exists
+  if (document.getElementById('map')) {
+    const map = L.map('map', {center: [45.42, -75.69], zoom: 5});
+    // Add a tile layer: OSM (light) + optional dark toggle
+    const toner = L.tileLayer('https://{s}.tile.stamen.com/toner/{z}/{x}/{y}.png', {maxZoom: 19}).addTo(map);
+    // Layer switcher
+    const topo = L.tileLayer('http://localhost:8080/tiles/{z}/{x}/{y}.png', {maxZoom: 7, opacity: 0.6});
+    const baseLayers = {
+      'Stamen Toner': toner
+    };
+    const overlayLayers = {
+      'Local Bathymetry': topo
+    };
+    L.control.layers(baseLayers, overlayLayers).addTo(map);
+  }
+
   const status = document.getElementById("status");
   try {
     const manifest = await (await fetch("data/manifest.json")).json();

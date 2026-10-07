@@ -1,6 +1,6 @@
 # Canada Ocean Dashboard
 
-A local dashboard that pulls live and recent oceanographic data from Canadian public sources and shows it in a hand-built HTML/CSS interface at `http://localhost:8000`.
+A local dashboard that pulls live and recent oceanographic data from public sources and shows it in a hand-built HTML/CSS interface at `http://localhost:8000`.
 
 The point of the project is the front end: semantic HTML, a CSS design system (custom properties, grid and flexbox layout, responsive breakpoints, dark mode), and accessible data display. The Python side only fetches and normalises data into JSON files that the page reads. No frameworks.
 
@@ -10,7 +10,7 @@ The point of the project is the front end: semantic HTML, a CSS design system (c
 |---|---|---|
 | Tides and water levels | Observed and predicted water level at CHS tide stations | DFO Canadian Hydrographic Service, IWLS API |
 | Wave buoys | Significant wave height, period, sea temperature | DFO Marine Environmental Data Section (MEDS) and ECCC MSC Datamart marine obs |
-| Sea surface temperature | BC lightstation SST and salinity series | DFO BC Lightstations, via CIOOS Pacific ERDDAP |
+| Sea surface temperature | BC lightstation SST and salinity series | DFO BC Lightstations, via CIOOS Pacific ERDDAP|
 | Coastal observatories | Cabled observatory sensor readings | Ocean Networks Canada Oceans 3.0 API (free token) |
 | Regional ocean data | Selected CIOOS datasets per region | CIOOS Pacific, Atlantic and St. Lawrence ERDDAP servers |
 | Research stations | Hakai Institute sensor network | Hakai ERDDAP |

@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="css/tokens.css">
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.10.5/dist/leaflet.css" integrity="sha256-sA+G4vVQ+K6GkZz2f4y6j6zG9p3Tn4x6+5ZcS0Z6Lw=" crossorigin="" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.10.5/dist/leaflet.css" integrity="sha256-sA+G4vVQ+K6GkZz2f4y6j6zG9p3Tn4x6+5ZcS0Z6Lw=" crossorigin="" />
 </head>
 <body>
   <header class="site-header">
@@ -33,11 +35,17 @@
       <h2 id="h-onc">Coastal observatories</h2>
       <div class="panel-body"><p class="empty">No data yet.</p></div>
     </section>
+  <!-- Map panel -->
+  <section class="panel panel--wide" id="map-panel" aria-labelledby="h-map">
+    <h2 id="h-map">Interactive Map</h2>
+    <div id="map" style="width:100%;height:400px;"></div>
+  </section>
   </main>
 
   <footer class="site-footer">
     <p>Data: Fisheries and Oceans Canada, Environment and Climate Change Canada, CIOOS, Ocean Networks Canada, Hakai Institute, Argo. See README for sources and terms.</p>
   </footer>
-  <script src="js/app.js" defer></script>
+  <script src="https://unpkg.com/leaflet@1.10.5/dist/leaflet.js" integrity="sha256-sA+G4vVQ+K6GkZz2f4y6j6zG9p3Tn4x6+5ZcS0Z6Lw=" crossorigin=""></script>
+<script src="js/app.js" defer></script>
 </body>
 </html>
